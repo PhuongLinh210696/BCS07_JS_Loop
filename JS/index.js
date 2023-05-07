@@ -1,4 +1,7 @@
 // Bài tập 1 Tìm số nguyên dương nhỏ nhất 
+//Input: 
+//Các bước xử lý
+//Output:
 function soNguyenDuongNhoNhat() {
     var S = 0;
     var n = 0;
@@ -10,6 +13,9 @@ function soNguyenDuongNhoNhat() {
     document.getElementById("ketQuaBaiTap1").innerHTML = S;
 }
 //Bài tập 2 Tính S(n) = x + x^2 + x^3 + … + x^n
+//Input: số x bất kỳ, số n bất kỳ
+//Các bước xử lý
+//Output: Tổng S 
 function tongS() {
     var soXBatKi = +document.getElementById("soX2").value;
     var soNBatKi = +document.getElementById("soN2").value;
@@ -31,6 +37,9 @@ function giaiThua(){
     document.getElementById("ketQuaBaiTap3").innerHTML = giai_thua;
 }
 //Bài 4 div chẵn lẻ
+//Input: 
+//Các bước xử lý
+//Output:  
 function divChanLe() {
     for(var i = 1; i <= 10; i++){
         if(i%2==0){
@@ -46,6 +55,9 @@ function divChanLe() {
 
 
 //Bài 5 Kiểm tra số nguyên tố
+//Input: số n
+//Các bước xử lý
+//Output: dãy số nguyên tố
 function soNguyenTo(){
     var soNBatKi = +document.getElementById("soN5").value;
     var result ="";

@@ -1,7 +1,7 @@
 // Bài tập 1 Tìm số nguyên dương nhỏ nhất 
 //Input: 
 //Các bước xử lý
-//Output:
+//Output: Số nguyên dương nhỏ nhất 
 function soNguyenDuongNhoNhat() {
     var S = 0;
     var n = 0;
@@ -9,7 +9,6 @@ function soNguyenDuongNhoNhat() {
         n++;
         S = S + n;
     }
-    console.log(S)
     document.getElementById("ketQuaBaiTap1").innerHTML = S;
 }
 //Bài tập 2 Tính S(n) = x + x^2 + x^3 + … + x^n
@@ -29,6 +28,9 @@ function tongS() {
     document.getElementById("ketQuaBaiTap2").innerHTML = S;
 }
 //Bài tập 3 Tính giai thừa
+//Input: nhập số n
+//Các bước xử lý: 
+//Output: giai thừa n
 function giaiThua(){
     var soNBatKi = +document.getElementById("soN3").value;
     var giai_thua = 1;
@@ -38,8 +40,8 @@ function giaiThua(){
 }
 //Bài 4 div chẵn lẻ
 //Input: 
-//Các bước xử lý
-//Output:  
+//Các bước xử lý: 
+//Output: chẵn đỏ, lẻ xanh
 function divChanLe() {
     for(var i = 1; i <= 10; i++){
         if(i%2==0){
@@ -73,9 +75,8 @@ function soNguyenTo(){
         }
         // if number greater than 1 and not divisible by other numbers
         if (i > 1 && flag == 0) {
-            result += i;
+            result +=i + "<br>" ;
         }
-        document.getElementById("ketQuaBaiTap5").innerHTML = `<h3>${result}</h3>` ;
+        document.getElementById("ketQuaBaiTap5").innerHTML = `<div>${result}</div>` ;
     }
-    // document.getElementById("ketQuaBaiTap5").innerHTML = `<h3>${result}</h3>` ;
 }
